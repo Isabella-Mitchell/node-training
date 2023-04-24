@@ -1,0 +1,17 @@
+{
+  "name": "10-understanding-and-handling-errors",
+  "version": "0.0.1",
+  "description": "",
+  "main": "exercise1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:approach-one" : "NODE_OPTIONS=--experimental-vm-modules npx jest approach-1/exercise.test.js"
+  },
+  "keywords": [],
+  "author": "Kevin Cunningham",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

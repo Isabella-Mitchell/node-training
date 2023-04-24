@@ -1,0 +1,16 @@
+{
+  "name": "10-working-with-streams",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kevin Cunningham",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "csv-parse": "^5.0.4",
+  }
+}

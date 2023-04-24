@@ -1,0 +1,20 @@
+{
+  "name": "10-understanding-and-handling-errors",
+  "version": "0.0.1",
+  "description": "",
+  "main": "exercise1.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:approach-one" : "NODE_OPTIONS=--experimental-vm-modules npx jest approach-1/exercise.test.js",
+    "test:approach-two" : "NODE_OPTIONS=--experimental-vm-modules npx jest approach-2/exercise.test.js",
+    "test:approach-three" : "NODE_OPTIONS=--experimental-vm-modules npx jest approach-3/exercise.test.js",
+    "test:custom-error" : "NODE_OPTIONS=--experimental-vm-modules npx jest custom-error/exercise.test.js"
+  },
+  "keywords": [],
+  "author": "Kevin Cunningham",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

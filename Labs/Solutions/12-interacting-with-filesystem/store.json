@@ -1,0 +1,41 @@
+[
+	{
+		"name": "Lion, Witch and the Wardrobe",
+		"id": 1
+	},
+	{
+		"author": "Fredrik Backman",
+		"title": "Beartown",
+		"id": 2
+	},
+	{
+		"title": "The Lord of the Rings",
+		"author": "JRR Tolkein",
+		"id": 3
+	},
+	{
+		"title": "Dogs of War",
+		"author": "Adrian Tchaikovsky",
+		"id": 4
+	},
+	{
+		"title": "Dune",
+		"author": "Frank Herbert",
+		"id": 5
+	},
+	{
+		"title": "The Lord of the Rings",
+		"author": "JRR Tolkein",
+		"id": 6
+	},
+	{
+		"title": "Dogs of War",
+		"author": "Adrian Tchaikovsky",
+		"id": 7
+	},
+	{
+		"title": "Dune",
+		"author": "Frank Herbert",
+		"id": 8
+	}
+]
