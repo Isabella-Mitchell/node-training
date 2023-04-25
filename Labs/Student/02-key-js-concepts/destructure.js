@@ -20,7 +20,7 @@ function getNestedNumbers() {
   return [7, 4, [3, 4, [5, 6]]];
 }
 
-// Using destructuring, call `getAddress()` and create a 'city', 'state' and 'zip' variable.
+// Using destructuring, call `getAddress()` and create a 'hamlet', 'county' and 'postcode' variable.
 
 const {} = getAddress();
 
