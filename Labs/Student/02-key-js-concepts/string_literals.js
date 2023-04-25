@@ -5,9 +5,7 @@ const person = {
   friends: ["Simon", "Colby", "Lauro", "Joel"],
 };
 // construct a string using template literal string interpolation
-const personsFriends = `${person.name} has ${
-  person.friends.length
-} friends: ${person.friends.join(", ")}.`;
+const personsFriends = ``;
 
 console.log(personsFriends);
 
