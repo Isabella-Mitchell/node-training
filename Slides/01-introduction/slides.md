@@ -364,13 +364,11 @@ server.listen(port, hostname, () => {
 
   > There should be no output when checking `correct-syntax.js` and there should be a Syntax Error when checking the syntax of `bad-syntax.js`.
 
-3. In the REPL, import the http library (`const http = require("http")`). Use the tab to explore some of the methods available. Also, check out the docs (https://nodejs.org/dist/latest-v16.x/docs/api/http.html)
+3. In the REPL, import the http library (`const http = require("http")`). Use the tab to explore some of the methods available. Also, check out the docs (https://nodejs.dev/en/api/v19/http/)
 
 4. Edit the server to send different responses, for example:
   - Play with the status code
   - Add some additional headers
   - Call the res.end() to send things
-
-
 
 ---
