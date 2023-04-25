@@ -21,7 +21,7 @@ drawings:
 
 Kevin Cunningham
 
-Grab repo at https://github.com/doingandlearning/node-training-dec-2022
+Grab repo at https://github.com/doingandlearning/node-training-april-2023
 
 ---
 
