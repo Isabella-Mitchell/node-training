@@ -47,3 +47,13 @@ console.log(newFunc("I'm shouting also!"));
   };
   obj.say();
 }
+
+// Camel Case
+const thisIsAValidCamelCaseVariableName = "";
+
+// Snake Case
+const this_is_a_valid_snake_case_name = "";
+
+class Dog {}
+
+const dog = new Dog();

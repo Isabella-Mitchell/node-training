@@ -4,7 +4,7 @@ const fs = require("fs");
 
 function readFileThenDo(next) {
   fs.readFile("./blah.nofile", (err, data) => {
-    if (err) throw err;
+    if (err) next(err); // throw err
     next(data);
   });
 }

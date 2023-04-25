@@ -665,7 +665,7 @@ Scenario: You have to fetch data from three different APIs and process it in eit
 
 Instructions:
 
-- Write a function fetchData(api) that simulates fetching data from an API using a promise.
+- Write a function fetchData(api) that simulates fetching data from an API using a promise. (or actually does it using!)
 - Create three API URLs as strings.
 - Create an async function serialFlow() that fetches data in serial order by awaiting fetchData() calls for each API.
 - Create an async function parallelFlow() that fetches data in parallel order by using Promise.all() with fetchData() calls for each API, and then awaits the result.

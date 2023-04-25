@@ -2,6 +2,7 @@ const fs = require("fs");
 
 function readFile(filename, encoding) {
   //TODO Create a promise version of the async readFile function
+  // return new Promise()
   fs.readFile(filename, encoding, (err, data) => {
     if (err) {
       console.log(err);
