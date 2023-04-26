@@ -1,7 +1,9 @@
 import express from "express";
 import bookRouter from "./bookRoutes.js";
+import { headerCheck } from "./authMiddleware.js";
 const app = express();
 
+app.use(headerCheck);
 app.use(express.json());
 app.use("/api/v1/books", bookRouter);
 
