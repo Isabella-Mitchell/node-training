@@ -1,0 +1,23 @@
+{
+  "name": "pino-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "dev": "nodemon index.js",
+    "dev:debug": "nodemon --inspect-brk index.js"
+  },
+  "keywords": [],
+  "author": "Kevin Cunningham",
+  "license": "MIT",
+  "dependencies": {
+    "pino": "^7.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "standard": "^16.0.4"
+  }
+}

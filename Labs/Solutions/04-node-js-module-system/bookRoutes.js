@@ -1,12 +1,14 @@
-let books = [
-  { id: 1, author: "John Scalzi", title: "Old Man's War" },
-  { id: 2, author: "Fredrik Backman", title: "Anxious People" },
-  { id: 3, author: "Mary Robinette Kowal", title: "The Calculating Stars" },
-];
+const { readFile } = require("fs/promises");
 
-let nextId = 4;
+let nextId = null;
+let books = null;
 
-export function serveBookRoute(req, res) {
+export async function serveBookRoute(req, res) {
+  if (!books) {
+    const data = await readFile("./books.json");
+    books = JSON.parse(data);
+    nextId = books.length + 1;
+  }
   if (req.url.endsWith("/api/book")) {
     // "/api/book"
     switch (req.method) {
