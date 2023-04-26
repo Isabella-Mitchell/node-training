@@ -19,6 +19,14 @@ info: |
 drawings:
   persist: false
 ---
+# Morning 👋🏻
+
+As you arrive, could you:
+
+- Pull the changes from the repo
+- Think of a takeaway (learning, question, wondering) from our last day to share.
+
+---
 
 # Node.js Module System
 

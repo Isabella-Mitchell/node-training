@@ -1,0 +1,22 @@
+{
+  "name": "04-module-system",
+  "version": "0.0.1",
+  "description": "This is a package that will explore the module systems in Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "test:everything": "echo \"Testing all things.\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pino": "^8.11.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
