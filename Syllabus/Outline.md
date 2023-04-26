@@ -9,6 +9,7 @@
 
 - Node.js Module System
 - Debugging with Node
+- Error handling
 - Node.js testing
 - Events in Node
 - RESTful Services
@@ -17,7 +18,8 @@
 # Day 3: Refactor API to have a persistent backend
 
 - Buffers and Streams
-- Error handling
+- AbortController 
 - Interacting with the file system
 - Node.js and Databases
 
+- Bleh (any other topics around Node)

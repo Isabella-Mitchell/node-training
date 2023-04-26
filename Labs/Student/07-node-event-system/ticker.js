@@ -6,15 +6,32 @@
 // when the number of milliseconds has passed, providing, as the result, the
 // total count of tick events emitted. Hint: you can use setTimeout() to
 // schedule another setTimeout() recursively or you could use setInterval().
+const { EventEmitter } = require("node:events");
 
 function tickingTimer(ms, cb) {
   // TODO: create event emitter
+  const ee = new EventEmitter();
+  let time = 0;
+
+  const interval = setInterval(() => {
+    ee.emit("tick");
+    time += 50;
+
+    if (time >= ms) {
+      clearInterval(interval);
+      cb();
+    }
+  }, 50);
+
+  return ee;
   // TODO: Every 50ms emit a tick
   // TODO: After `ms` milliseconds have passed, stop emitting
   // and invoke the callback.
 }
 
-tickingTimer();
+tickingTimer(100, () => console.log("all done")).on("tick", () =>
+  console.log("tick")
+);
 
 // Part 2
 // A simple modification:

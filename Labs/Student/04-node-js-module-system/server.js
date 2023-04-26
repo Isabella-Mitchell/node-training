@@ -1,16 +1,13 @@
 const pino = require("pino");
 const http = require("http");
+const { readFile } = require("fs/promises");
+
+import data from "./data.json" assert { type: "json" };
 
 const logger = pino();
 
 const hostname = "127.0.0.1";
 const port = 3000;
-
-let books = [
-  { id: 1, author: "John Scalzi", title: "Old Man's War" },
-  { id: 2, author: "Fredrik Backman", title: "Anxious People" },
-  { id: 3, author: "Mary Robinette Kowal", title: "The Calculating Stars" },
-];
 
 let nextId = 4;
 
@@ -49,7 +46,7 @@ const server = http.createServer((req, res) => {
           res.end("Sorry. We don't serve this verb yet.\n");
       }
     } else {
-      // /api/book/id
+      // /api/books/id
       const urlArray = req.url.split("/");
 
       // Return early if we have too many parts
