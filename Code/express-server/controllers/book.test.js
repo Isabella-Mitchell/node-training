@@ -68,6 +68,17 @@ test("that given the right query parameter, the right object will be returned", 
 
   expect(response.statusCode).toBe(200);
   expect(data.length).toBe(1);
+  expect(data).toContainEqual({
+    id: 1,
+    author: "John Scalzi",
+    title: "Old Man's War",
+  });
+
+  expect(data).not.toContainEqual({
+    id: 2,
+    author: "Mary Robinette Kowal",
+    title: "The Calculating Stars",
+  });
 });
 
 test("that given the right query parameter, the right object will be returned", async () => {
@@ -75,5 +86,17 @@ test("that given the right query parameter, the right object will be returned", 
   const data = response.body;
 
   expect(response.statusCode).toBe(200);
+
   expect(data.length).toBe(2);
+  expect(data).toContainEqual({
+    id: 1,
+    author: "John Scalzi",
+    title: "Old Man's War",
+  });
+
+  expect(data).toContainEqual({
+    id: 2,
+    author: "Mary Robinette Kowal",
+    title: "The Calculating Stars",
+  });
 });
