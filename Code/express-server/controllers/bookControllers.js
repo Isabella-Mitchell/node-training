@@ -12,7 +12,7 @@ export async function getAllBooks(req, res, next) {
   try {
     let results;
     if (author) {
-      results = await Book.find();
+      results = await Book.find({ author: new RegExp(author, "i") });
     } else {
       results = await Book.find();
     }
