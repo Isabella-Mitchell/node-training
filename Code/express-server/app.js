@@ -1,5 +1,5 @@
 import express from "express";
-import bookRouter from "./bookRoutes.js";
+import bookRouter from "./routes/bookRoutes.js";
 import { headerCheck } from "./authMiddleware.js";
 const app = express();
 

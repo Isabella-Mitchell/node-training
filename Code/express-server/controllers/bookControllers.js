@@ -7,7 +7,6 @@ let nextId = 3;
 
 export function getAllBooks(req, res) {
   const { author } = req.query;
-
   if (author) {
     res.json(
       books.filter((book) =>

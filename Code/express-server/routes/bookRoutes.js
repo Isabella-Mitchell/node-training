@@ -1,6 +1,5 @@
 import { Router } from "express";
-import * as controller from "./bookControllers.js";
-import { headerCheck } from "./authMiddleware.js";
+import * as controller from "../controllers/bookControllers.js";
 
 const router = Router();
 // router.use(headerCheck);
