@@ -1,6 +1,7 @@
 export function headerCheck(req, res, next) {
   if (req.headers["x-api-key"] && req.headers["x-api-key"] === "books-rule") {
     next();
+    return;
   }
 
   res

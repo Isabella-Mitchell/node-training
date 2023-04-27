@@ -17,9 +17,14 @@
 
 # Day 3: Refactor API to have a persistent backend
 
+- Express
+	- query parameters
+	- project structure
+	- testing 
 - Buffers and Streams
 - AbortController 
-- Interacting with the file system
+- Interacting with the file system // fs
 - Node.js and Databases
 
 - Bleh (any other topics around Node)
+	
