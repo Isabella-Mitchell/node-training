@@ -1,5 +1,6 @@
-import { getAllBooks } from "../bookControllers.js";
 import { jest } from "@jest/globals";
+
+import { getAllBooks } from "../bookControllers.js";
 import supertest from "supertest";
 import app from "../app.js";
 
@@ -48,7 +49,7 @@ test("that i filter the books on a correct query", async () => {
   const returnValue = res.json.mock.calls[0][0];
 
   expect(returnValue.length).toBe(1);
-  console.log(returnValue);
+
   expect(returnValue).toContainEqual({
     id: 1,
     author: "John Scalzi",
