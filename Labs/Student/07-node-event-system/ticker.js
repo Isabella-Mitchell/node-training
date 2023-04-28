@@ -6,9 +6,31 @@
 // when the number of milliseconds has passed, providing, as the result, the
 // total count of tick events emitted. Hint: you can use setTimeout() to
 // schedule another setTimeout() recursively or you could use setInterval().
+("use strict");
+const assert = require("assert");
 const { EventEmitter } = require("node:events");
 
+let count = 0;
+
+const listener1 = () => {
+  count += 1;
+  console.log("tick");
+};
+
+function countTicks() {
+  console.log(count);
+}
+
 function tickingTimer(ms, cb) {
+  const ee = new EventEmitter();
+  ee.on("tick", listener1);
+  setInterval(() => {
+    ee.emit("tick");
+  }, 50);
+  setTimeout(() => {
+    ee.removeListener("tick", listener1);
+  }, ms);
+  cb();
   // TODO: create event emitter
   const ee = new EventEmitter();
   let time = 0;
@@ -32,6 +54,7 @@ function tickingTimer(ms, cb) {
 tickingTimer(100, () => console.log("all done")).on("tick", () =>
   console.log("tick")
 );
+// tickingTimer(1000, countTicks());
 
 // Part 2
 // A simple modification:

@@ -22,5 +22,9 @@ function readFile(filename, encoding) {
 
 // TODO: Load the file, zip it and then print it to the screen.
 readFile("./support/demofile.txt", "utf-8")
-    .then(...) // --> Load it then zip it and then print it to screen
+    .then((data) => {
+      zlibPromise(data)
+    }
+    
+    // --> Load it then zip it and then print it to screen
 });

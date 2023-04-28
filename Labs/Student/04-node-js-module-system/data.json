@@ -1,5 +1,9 @@
 [
   { "id": 1, "author": "John Scalzi", "title": "Old Man's War" },
   { "id": 2, "author": "Fredrik Backman", "title": "Anxious People" },
-  { "id": 3, "author": "Mary Robinette Kowal", "title": "The Calculating Stars" },
+  {
+    "id": 3,
+    "author": "Mary Robinette Kowal",
+    "title": "The Calculating Stars"
+  }
 ]

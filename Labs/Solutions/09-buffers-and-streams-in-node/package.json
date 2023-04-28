@@ -11,6 +11,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "csv-parse": "^5.0.4",
+    "csv": "^6.2.10",
+    "csv-parse": "^5.0.4"
   }
 }

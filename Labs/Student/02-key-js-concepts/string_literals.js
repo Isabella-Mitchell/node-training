@@ -5,7 +5,7 @@ const person = {
   friends: ["Simon", "Colby", "Lauro", "Joel"],
 };
 // construct a string using template literal string interpolation
-const personsFriends = ``;
+const personsFriends = `${person.name} has 4 friends: ${person.friends[0]}, ${person.friends[1]}, ${person.friends[2]}, ${person.friends[3]}.`;
 
 console.log(personsFriends);
 

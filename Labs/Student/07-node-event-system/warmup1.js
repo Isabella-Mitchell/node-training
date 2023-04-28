@@ -5,8 +5,16 @@ const { EventEmitter } = require("events");
 const ee = new EventEmitter();
 let count = 0;
 
+// ee.once("tick", () => {
+//   console.log("tick");
+// });
+
+// ee.on("tick", () => {
+//   console.log("my-event fired");
+// });
+
 // TODO: Update this to only be called once
-ee.on("tick", listener);
+ee.once("tick", listener);
 
 setInterval(() => {
   ee.emit("tick");

@@ -7,7 +7,11 @@ const assert = require("assert");
 // lynx prototype must have ONLY a purr method
 // cat prototype must have ONLY a meow method
 
-class Leopard {}
+class Leopard {
+  constructor(noise) {
+    this.noise = "hiss";
+  }
+}
 
 class Lynx extends Leopard {}
 

@@ -9,6 +9,8 @@ const logger = pino();
 const hostname = "127.0.0.1";
 const port = 3000;
 
+let books = require("./data.json");
+
 let nextId = 4;
 
 const server = http.createServer((req, res) => {

@@ -8,7 +8,12 @@ function readFileThenDo(next) {
     next(data);
   });
 }
-// Hint use try..catch
-readFileThenDo((data) => {
-  console.log(data);
-});
+
+try {
+  // Hint use try..catch
+  readFileThenDo((data) => {
+    console.log(data);
+  });
+} catch (error) {
+  console.log(error);
+}
